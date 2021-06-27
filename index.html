@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make your day pefect🌙</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/1ff5e81e01.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="weather">
+    <span></span>
+    <span></span>
+  </div>
+
+  <div id="head">
+    <div id="clock">00:00</div>
+    <form class="hidden" id="username-form">
+      <input required type="text" placeholder=" What is your name?">
+    </form>
+    <form class="hidden" id="dream-form">
+      <input required type="text" placeholder=" What do you want be?">
+    </form>
+    <div id="userinfo">
+      <span id="dream" class="hidden"></span>
+      <span id="username" class="hidden"></span>
+    </div>
+  </div>
+  
+  <div class="content">
+    <div id="bucket">
+      <div>
+        <h2>Bucket List</h2>
+        <ul id="bucket-list">
+        </ul>
+      </div>
+      <form id="bucket-form">
+        <input required type="text" placeholder=" What would you do in the future?">
+      </form>
+
+    </div>
+    
+    <div id="todo">
+      <h2>Things to Do</h2>
+      <form id="todo-form">
+        <select name="priority" id="priority">
+          <option value="first">1</option>
+          <option value="second">2</option>
+          <option value="third">3</option>
+        </select>
+        <input required type="text" placeholder=" Write a to do and select priority.  ">
+      </form>
+      <ul id="todo-list">
+      </ul>
+    </div>
+    
+    <div id="habit">
+      <div>
+        <h2>Habit Routine</h2>
+        <ul id="habit-list">
+        </ul>
+      </div>
+      <div id="habit-inputs">
+        <form id="habit-form">
+          <input required type="text" placeholder=" My Daily Routine">
+        </form>
+        <button class="habit-reset" type="text">Uncheck</button>
+      </div>
+    </div>
+  </div>
+  
+  <div id="quote">
+    <span></span>
+    <span></span>
+  </div>
+  
+  <script src="js/userinfo.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/bucket.js"></script>
+  <script src="js/habit.js"></script>
+</body>
+</html>
